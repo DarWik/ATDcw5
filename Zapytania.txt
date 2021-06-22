@@ -1,0 +1,43 @@
+Zad. 1
+
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'Poland', 'capital': 'Warsaw', 'language': 'Polish', 'continentEurope': True, 'population':38, 'info': null}"  http://localhost:8098/buckets/s13467/keys/pl
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'Germany', 'capital': 'Berlin', 'language': 'German', 'continentEurope': True, 'population':83, 'info': null}"  http://localhost:8098/buckets/s13467/keys/de
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'France', 'capital': 'Paris', 'language': 'French', 'continentEurope': True, 'population':67, 'info': null}"  http://localhost:8098/buckets/s13467/keys/fr
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'Slovakia', 'capital': 'Brtislava', 'language': 'Slovak', 'continentEurope': True, 'population':5, 'info': null}"  http://localhost:8098/buckets/s13467/keys/sl
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'USA', 'capital': 'Washington', 'language': 'English', 'continentEurope': False, 'population':328, 'info': null}"  http://localhost:8098/buckets/s13467/keys/us
+
+Zad. 2
+
+curl -i -XGET  http://localhost:8098/buckets/s13467/keys/pl
+
+Zad. 3
+
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'Poland', 'capital': 'Warsaw', 'language': 'Polish', 'continentEurope': True, 'population':38, 'info': null, 'currency': 'PLN'}"  http://localhost:8098/buckets/s13467/keys/pl
+
+Zad. 4
+
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'France', 'language': 'French', 'continentEurope': True, 'population':67, 'info': null}"  http://localhost:8098/buckets/s13467/keys/fr
+
+Zad. 5
+
+curl -i -XPUT -H "Content-Type: application/json" -d "{'country': 'Republic of Slovakia', 'capital': 'Brtislava', 'language': 'Slovak', 'continentEurope': True, 'population':5, 'info': null}"  http://localhost:8098/buckets/s13467/keys/sl
+
+Zad. 6
+
+curl -i -XDELETE http://localhost:8098/buckets/s13467/keys/de
+
+Zad. 7
+
+curl -i -XGET  http://localhost:8098/buckets/s13467/keys/ru
+
+Zad. 8
+
+curl -i -XPOST -H "Content-Type: application/json" -d "{'notes': 'notatka'}" http://localhost:8098/buckets/s13467/keys
+
+Zad. 9
+
+curl -i -XGET  http://localhost:8098/buckets/s13467/keys/5e32ORMMpZsx1znWl1GD4yBLUwV
+
+Zad. 10
+
+curl -i -XDELETE http://localhost:8098/buckets/s13467/keys/5e32ORMMpZsx1znWl1GD4yBLUwV
